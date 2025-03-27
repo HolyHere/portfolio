@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 160px 160px 116px 160px;
+  background-color: white;
+  width: 1200px;
+  margin: auto;
+}
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .list {
+  width: 363px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .list p a:hover {
+  color: #302e2e;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  text-decoration: underline;
+
+}
+
+header section h1  a{
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+header .list p a{
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+main .main_sec_1 .main_sec_1_1 {
+  margin: 128px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .main_sec_1 .main_sec_1_1 h1 {
+  width: 360px;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: #181717;
+}
+
+main .main_sec_1 .main_sec_1_1 p {
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #606060;
+}
+
+main .image {
+  background-image: url(./svg/strelka.svg);
+  width: 34px;
+  height: 40px;
+  background-repeat: no-repeat;
+  margin: 128px 0px 0px 0px;
+}
+
+/* Первая страница */
+
+.projects .first_proj {
+  margin: 83px 0px 0px 0px;
+  height: 473px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 3px solid #606060;
+}
+
+.projects .first_proj .sprava_1 {
+  width: 640px;
+  height: 365px;
+  background-color: #606060;
+}
+
+.projects .first_proj .sleva_1 {
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects .first_proj .sleva_1 h3 {
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.projects .first_proj .sleva_1 .p_1 {
+  margin-top: 25px;
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.projects .first_proj .sleva_1 .p_2 {
+  color: #606060;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.projects .first_proj .sleva_1 .down {
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+/* Вторая секция */
+
+.projects .second_proj {
+  margin: 114px 0px 0px 0px;
+  height: 473px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 3px solid #606060;
+}
+
+.projects .second_proj .sprava_1 {
+  width: 640px;
+  height: 365px;
+  background-color: #606060;
+}
+
+.projects .second_proj .sleva_1 {
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects .second_proj .sleva_1 .up h3 {
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.projects .second_proj .sleva_1 .p_1 {
+  margin-top: 25px;
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.projects .second_proj .sleva_1 .p_2 {
+  color: #606060;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.projects .second_proj .sleva_1 .down {
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+/* Трятья секция */
+
+.projects .third_proj {
+  margin: 114px 0px 0px 0px;
+  height: 473px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projects .third_proj .sprava_1 {
+  width: 640px;
+  height: 365px;
+  background-color: #606060;
+}
+
+.projects .third_proj .sleva_1 {
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects .third_proj .sleva_1 .up h3 {
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.projects .third_proj .sleva_1 .up .p_1 {
+  margin-top: 25px;
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.projects .third_proj .sleva_1 .up .p_2 {
+  color: #606060;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.projects .third_proj .sleva_1 .down {
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: flex-end;
+  color: #181717;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-weight: 700;
+}
+
+footer div .p_f {
+  margin: 0px 0px 0px 32px; 
+
+}
+
+  footer .p_f_1 { 
+    color: #2429AF;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    }
