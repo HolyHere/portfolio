@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +7,7 @@
 body {
   margin: auto;
   padding: 102px 131px 176px 131px;
-  width: 1382px;
+  width: 1120px;
 }
 
 header section {
@@ -70,7 +71,7 @@ main section .inp {
 }
 
 main section .inp .inp_et {
-  width: 100%;
+  width: 678px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -155,7 +156,7 @@ main section .inp .inp_et button {
 /* Параграфы в секции */
 
 main section .inp .inp_p p {
-  width: 352px;
+ 
   font-family: DM Sans, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 22px;
