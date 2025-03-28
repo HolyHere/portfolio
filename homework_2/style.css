@@ -1,3 +1,24 @@
+/* шрифты */
+
+@font-face {
+  font-family: "roboto";
+  src: url(./fonts/roboto/Roboto_Condensed-Medium.ttf) format(truetype);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "roboto_reg";
+  src: url(./fonts/roboto/Roboto_SemiCondensed-Regular.ttf) format(truetype);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "roboto_bold";
+  src: url(./fonts/roboto/Roboto_SemiCondensed-Bold.ttf) format(truetype);
+  font-weight: 700;
+}
+
+/* скелет страницы */
 
 * {
   padding: 0;
@@ -10,14 +31,17 @@ body {
   width: 1120px;
 }
 
-header section {
+/* скелет шапки */
+
+header article section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 35px;
 }
 
-header section div {
+/* скелет навигации */
+header article section div {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -25,52 +49,36 @@ header section div {
   height: 35px;
 }
 
-header section div p {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+/* элементы шапки */
+
+header article section div p {
+  font-family: "roboto";
   font-weight: 500;
   font-size: 22px;
   letter-spacing: -3%;
 }
 
-header section h1 {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+header article section h1 {
+  font-family: "roboto";
   font-weight: 500;
   font-size: 50px;
   letter-spacing: -3%;
 }
 
-/* Секция  */
+/* основная секция  */
 
-main section {
+main article section {
   margin-top: 52px;
 }
 
-/* Текст над инпутами  */
-main section .contact h1 {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 60px;
-  letter-spacing: -3%;
-  color: #181717;
-}
-
-main section .contact p {
-  margin-top: 32px;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  letter-spacing: -3%;
-  color: #606060;
-}
-
-/* Все элементы в секции  */
+/* скелет секции */
 
 main section .inp {
   margin-top: 52px;
   display: flex;
 }
 
-main section .inp .inp_et {
+main article section .inp .inp_et {
   width: 678px;
   display: flex;
   flex-direction: column;
@@ -78,7 +86,7 @@ main section .inp .inp_et {
   align-content: flex-start;
 }
 
-main section .inp .inp_p {
+main article section .inp .inp_p {
   width: 352px;
   margin-left: 90px;
   display: flex;
@@ -87,9 +95,27 @@ main section .inp .inp_p {
   align-content: flex-start;
 }
 
+/* Текст над инпутами  */
+main article section .contact h1 {
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 60px;
+  letter-spacing: -3%;
+  color: #181717;
+}
+
+main article section .contact p {
+  margin-top: 32px;
+  font-family: "roboto_reg";
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: -3%;
+  color: #606060;
+}
+
 /* инпуты */
 
-main section .inp .inp_et input:focus::placeholder {
+main article section .inp .inp_et input:focus::placeholder {
   visibility: hidden;
   width: 100%;
   color: black;
@@ -99,12 +125,12 @@ main section .inp .inp_et input:focus::placeholder {
   border-radius: 5px;
   border-style: solid;
   padding: 17px 0px 15px 27px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: "roboto_reg";
   font-weight: 400;
   font-size: 15px;
 }
 
-main section .inp .inp_et input:focus {
+main article section .inp .inp_et input:focus {
   max-width: 100%;
   color: black;
   border-color: black;
@@ -113,18 +139,18 @@ main section .inp .inp_et input:focus {
   border-radius: 5px;
   border-style: solid;
   padding: 17px 0px 15px 27px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: "roboto_reg";
   font-weight: 400;
   font-size: 15px;
 }
 
-main section .inp .inp_et input {
+main article section .inp .inp_et input {
   max-width: 100%;
   border-width: 1px;
   border-radius: 5px;
   border-style: solid;
   padding: 17px 0px 15px 27px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: "roboto_reg";
   font-weight: 400;
   font-size: 15px;
   outline: none;
@@ -135,7 +161,7 @@ main section .inp .inp_et input {
 
 /* кнопка */
 
-main section .inp .inp_et button {
+main article section .inp .inp_et button {
   display: block;
   width: 162px;
   height: 42px;
@@ -144,7 +170,7 @@ main section .inp .inp_et button {
   background-color: #000000;
   color: #ffffff;
   margin-top: 27px;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: "roboto_bold";
   font-weight: 700;
   font-size: 18px;
 }
@@ -155,52 +181,56 @@ main section .inp .inp_et button {
 
 /* Параграфы в секции */
 
-main section .inp .inp_p p {
- 
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+main article section .inp .inp_p p {
+  font-family: "roboto_reg";
   font-weight: 400;
   font-size: 22px;
   letter-spacing: -3%;
   color: #606060;
 }
 
-main section .inp .inp_p .p_1 {
+main article section .inp .inp_p .p_1 {
   height: 76px;
 }
 
-main section .inp .inp_p .p_2 {
+main article section .inp .inp_p .p_2 {
   margin-top: 6px;
 }
 
-/* футтер */
-footer section {
+/* футтер скелет*/
+
+footer article section {
   margin-top: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer section .right {
-  display: flex;
-  align-content: flex-end;
-}
+/* слева */
 
-footer section .left p {
+footer article section .left p {
   color: #2429af;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: "roboto";
   font-weight: 500;
   font-size: 22px;
   letter-spacing: -3%;
 }
 
-footer section .right p {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+/* справа */
+
+footer article section .right {
+  display: flex;
+  align-content: flex-end;
+}
+
+footer article section .right p {
+  font-family: "roboto";
   font-weight: 500;
   font-size: 21px;
   letter-spacing: -3%;
   color: #181717;
 }
 
-footer section .right .p_1 {
+footer article section .right .p_1 {
   margin-left: 32px;
 }

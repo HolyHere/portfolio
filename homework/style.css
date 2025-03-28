@@ -1,3 +1,25 @@
+/* шрифты */
+
+@font-face {
+  font-family: "roboto";
+  src: url(./fonts/roboto/Roboto_Condensed-Medium.ttf) format(truetype);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "roboto_reg";
+  src: url(./fonts/roboto/Roboto_SemiCondensed-Regular.ttf) format(truetype);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "roboto_bold";
+  src: url(./fonts/roboto/Roboto_SemiCondensed-Bold.ttf) format(truetype);
+  font-weight: 700;
+}
+
+/* скелет страницы */
+
 * {
   padding: 0;
   margin: 0;
@@ -9,14 +31,17 @@ body {
   width: 1392px;
 }
 
-header section {
+/* скелет шапки  */
+
+header article section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 35px;
 }
 
-header section div {
+/* скелет навигации */
+header article section nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -24,25 +49,25 @@ header section div {
   height: 35px;
 }
 
-header section div p {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+/* шапка элементы навигации */
+header article section nav p {
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   letter-spacing: -3%;
 }
 
-header section h1 {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+/* шапка лого */
+header article section h1 {
+  font-family: "roboto";
   font-weight: 500;
   font-size: 50px;
   letter-spacing: -3%;
 }
 
-/* Певый див */
+/* Первый див скелет*/
 
-/* Первый слева */
-
-main section .fs_main {
+main article section .fs_main {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -51,25 +76,28 @@ main section .fs_main {
   height: 458px;
 }
 
-main section .fs_main .fs_left {
+/* Первый слева */
+
+
+main article section .fs_main .fs_left {
   width: 575px;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
 }
 
-main section .fs_main .fs_left p {
+main article section .fs_main .fs_left p {
   color: #606060;
   margin-top: 47px;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 24px;
   letter-spacing: -3%;
 }
 
-main section .fs_main .fs_left h1 {
+main article section .fs_main .fs_left h1 {
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 60px;
   letter-spacing: -3%;
@@ -77,7 +105,7 @@ main section .fs_main .fs_left h1 {
 
 /* Первый справа */
 
-.fs_right {
+main article section .fs_main .fs_right {
   background-color: #606060;
   width: 406px;
   height: 457px;
@@ -87,16 +115,16 @@ main section .fs_main .fs_left h1 {
 
 /* Второй сверху */
 
-main section .ss_main .ss_up {
+main article section .ss_main .ss_up {
   display: flex;
   align-content: flex-start;
   height: 77px;
   margin-top: 69px;
 }
 
-main section .ss_main .ss_up .ss_p1 {
+main article section .ss_main .ss_up .ss_p1 {
   margin-right: 63px;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   letter-spacing: -3%;
@@ -104,8 +132,8 @@ main section .ss_main .ss_up .ss_p1 {
   text-decoration-style: solid;
 }
 
-main section .ss_main .ss_up .ss_p2 {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+main article section .ss_main .ss_up .ss_p2 {
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 20px;
   letter-spacing: -3%;
@@ -113,16 +141,16 @@ main section .ss_main .ss_up .ss_p2 {
 
 /*Второй снизу */
 
-main section .ss_main .ss_down {
+main article section .ss_main .ss_down {
   display: flex;
   align-content: flex-start;
   height: 77px;
   margin-top: 86px;
 }
 
-main section .ss_main .ss_down .ss_p1_1 {
+main article section .ss_main .ss_down .ss_p1_1 {
   margin-right: 63px;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   letter-spacing: -3%;
@@ -130,15 +158,15 @@ main section .ss_main .ss_down .ss_p1_1 {
   text-decoration-style: solid;
 }
 
-main section .ss_main .ss_down .ss_p2_2 {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+main article section .ss_main .ss_down .ss_p2_2 {
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 20px;
   letter-spacing: -3%;
 }
 
 /* Третий див */
-main section .ts_main {
+main article section .ts_main {
   margin-top: 110px;
   height: 144px;
   display: flex;
@@ -146,36 +174,36 @@ main section .ts_main {
   border-top: 2px solid #181717;
 }
 
-main section .ts_main .ts {
+main article section .ts_main .ts {
   width: 100%;
   display: flex;
   align-content: flex-start;
 }
 
-main section .ts_main .ts .ts_left {
+main article section .ts_main .ts .ts_left {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-main section .ts_main .ts .ts_left .image {
+main article section .ts_main .ts .ts_left .image {
   margin: 0px 392px 0px 41px;
   background-image: url(./SVG/image.svg);
   width: 24px;
   height: 21px;
 }
 
-main .ts_main .ts .ts_left h2 {
+main article .ts_main .ts .ts_left h2 {
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 32px;
   letter-spacing: -3%;
 }
 
-main .ts_main .ts .ts_right h2 {
+main article .ts_main .ts .ts_right h2 {
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 32px;
   letter-spacing: -3%;
@@ -183,34 +211,34 @@ main .ts_main .ts .ts_right h2 {
 
 /* Футтер */
 
-footer section {
+footer article section {
 margin-top: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer section .right {
+footer article section .right {
   display: flex;
   align-content: flex-end;
 }
 
-footer section  .left p {
+footer article section  .left p {
   color: #2429af;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   letter-spacing: -3%;
 }
 
-footer section  .right p { 
-    font-family: DM Sans, Arial, Helvetica, sans-serif;
+footer article section  .right p { 
+    font-family: 'roboto';
     font-weight: 500;
     font-size: 21px;
     letter-spacing: -3%;
     color: #181717;
     }
 
-footer section  .right .p_1 { 
+footer article section  .right .p_1 { 
     margin-left: 32px;
 }

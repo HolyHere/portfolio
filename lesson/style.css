@@ -1,3 +1,56 @@
+/* шрифты */
+ /* скелет страницы */
+
+  /* скелет шапки */
+   /* лого шапка */
+    /* список шапка */
+
+     /* основнаая секция  */
+      /* основная слева  */
+       /* основная справа */
+        /* основная стрелка */
+
+         /* первая секция скелет */
+          /* первая элементы слева  */
+           /* первая справа */
+
+            /* вторая секция скелет */
+             /* вторая элементы слева */
+              /* вторая справа */
+
+               /* третья секция скелет */
+                /* третья элементы слева */
+                 /* третья справа */
+                 
+                  /* footer скелет */
+                   /* footer параграфы */
+                  
+   
+
+
+
+/* шрифты */
+
+@font-face {
+  font-family: "roboto";
+  src: url(./fonts/roboto/Roboto_Condensed-Medium.ttf) format(truetype);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "roboto_reg";
+  src: url(./fonts/roboto/Roboto_SemiCondensed-Regular.ttf) format(truetype);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "roboto_bold";
+  src: url(./fonts/roboto/Roboto_SemiCondensed-Bold.ttf) format(truetype);
+  font-weight: 700;
+}
+
+/* скелет страницы */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,64 +63,78 @@ body {
   margin: auto;
 }
 
-header {
+/* скелет шапки */
+
+header  article {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-header .list {
-  width: 363px;
-  display: flex;
-  justify-content: space-between;
-}
+/* лого шапка */
 
-header .list p a:hover {
-  color: #302e2e;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 23px;
-  text-decoration: underline;
-
-}
-
-header section h1  a{
+header article h1 a{
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 50px;
   text-decoration: none;
 }
 
-header .list p a{
+/* список шапка */
+
+header article .list {
+  width: 363px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header article .list p a{
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   text-decoration: none;
 }
 
-main .main_sec_1 .main_sec_1_1 {
+header article .list p a:hover {
+  color: #302e2e;
+  font-family: 'roboto';
+  font-weight: 500;
+  font-size: 22 px;
+  text-decoration: underline;
+
+}
+
+/* основнаая секция  */
+
+main article .main_s .main_s1 {
   margin: 128px 0px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-main .main_sec_1 .main_sec_1_1 h1 {
+/* основная слева  */
+
+main article .main_s .main_s1 h1 {
   width: 360px;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 60px;
   color: #181717;
 }
 
-main .main_sec_1 .main_sec_1_1 p {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+/* основная справа */
+
+main article .main_s .main_s1 p {
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 32px;
   color: #606060;
 }
+
+/* основная стрелка */
 
 main .image {
   background-image: url(./svg/strelka.svg);
@@ -77,7 +144,7 @@ main .image {
   margin: 128px 0px 0px 0px;
 }
 
-/* Первая страница */
+/* первая секция скелет */
 
 .projects .first_proj {
   margin: 83px 0px 0px 0px;
@@ -88,51 +155,55 @@ main .image {
   border-bottom: 3px solid #606060;
 }
 
-.projects .first_proj .sprava_1 {
-  width: 640px;
-  height: 365px;
-  background-color: #606060;
-}
-
-.projects .first_proj .sleva_1 {
+article .projects .first_proj .left_1 {
   height: 365px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.projects .first_proj .sleva_1 h3 {
+/* первая элементы слева  */
+
+article .projects .first_proj .left_1 h3 {
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 24px;
 }
 
-.projects .first_proj .sleva_1 .p_1 {
+article .projects .first_proj .left_1 .p_1 {
   margin-top: 25px;
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 22px;
 }
 
-.projects .first_proj .sleva_1 .p_2 {
+article .projects .first_proj .left_1 .p_2 {
   color: #606060;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 22px;
   margin-top: 60px;
 }
 
-.projects .first_proj .sleva_1 .down {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+article .projects .first_proj .left_1 .down {
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   text-decoration: underline;
   text-decoration-style: solid;
 }
 
-/* Вторая секция */
+/* первая справа */ 
+
+.projects .first_proj .right_1 {
+  width: 640px;
+  height: 365px;
+  background-color: #606060;
+}
+
+/* вторая секция скелет */
 
 .projects .second_proj {
   margin: 114px 0px 0px 0px;
@@ -143,51 +214,56 @@ main .image {
   border-bottom: 3px solid #606060;
 }
 
-.projects .second_proj .sprava_1 {
-  width: 640px;
-  height: 365px;
-  background-color: #606060;
-}
 
-.projects .second_proj .sleva_1 {
+.projects .second_proj .left_1 {
   height: 365px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.projects .second_proj .sleva_1 .up h3 {
+/* вторая элементы слева */
+
+.projects .second_proj .right_1 .up h3 {
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 24px;
 }
 
-.projects .second_proj .sleva_1 .p_1 {
+.projects .second_proj .left_1 .p_1 {
   margin-top: 25px;
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboot_reg';
   font-weight: 400;
   font-size: 22px;
 }
 
-.projects .second_proj .sleva_1 .p_2 {
+.projects .second_proj .left_1 .p_2 {
   color: #606060;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 22px;
   margin-top: 60px;
 }
 
-.projects .second_proj .sleva_1 .down {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+.projects .second_proj .left_1 .down {
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   text-decoration: underline;
   text-decoration-style: solid;
 }
 
-/* Трятья секция */
+/* вторая справа */
+
+.projects .second_proj .right_1 {
+  width: 640px;
+  height: 365px;
+  background-color: #606060;
+}
+
+/* трятья секция скелет */
 
 .projects .third_proj {
   margin: 114px 0px 0px 0px;
@@ -196,52 +272,55 @@ main .image {
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.projects .third_proj .sprava_1 {
-  width: 640px;
-  height: 365px;
-  background-color: #606060;
-}
-
-.projects .third_proj .sleva_1 {
+.projects .third_proj .left_1 {
   height: 365px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.projects .third_proj .sleva_1 .up h3 {
+/* Третья элементы слева  */
+
+.projects .third_proj .left_1 .up h3 {
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 24px;
 }
 
-.projects .third_proj .sleva_1 .up .p_1 {
+.projects .third_proj .left_1 .up .p_1 {
   margin-top: 25px;
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 22px;
 }
 
-.projects .third_proj .sleva_1 .up .p_2 {
+.projects .third_proj .left_1 .up .p_2 {
   color: #606060;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto_reg';
   font-weight: 400;
   font-size: 22px;
   margin-top: 60px;
 }
 
-.projects .third_proj .sleva_1 .down {
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+.projects .third_proj .left_1 .down {
+  font-family: 'roboto';
   font-weight: 500;
   font-size: 22px;
   text-decoration: underline;
   text-decoration-style: solid;
 }
 
-/* footer */
+/* Третья справа */
+
+.projects .third_proj .right_1 {
+  width: 640px;
+  height: 365px;
+  background-color: #606060;
+}
+
+/* footer скелет */
 
 footer {
   display: flex;
@@ -249,11 +328,12 @@ footer {
   align-items: center;
 }
 
+/* footer параграфы  */
 footer div {
   display: flex;
   justify-content: flex-end;
   color: #181717;
-  font-family: DM Sans, Arial, Helvetica, sans-serif;
+  font-family: 'roboto';
   font-weight: 500;
   font-weight: 700;
 }
@@ -264,7 +344,7 @@ footer div .p_f {
 
   footer .p_f_1 { 
     color: #2429AF;
-    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-family: 'roboto';
     font-weight: 500;
     font-size: 22px;
     }
